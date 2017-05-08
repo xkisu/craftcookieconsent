@@ -2,7 +2,7 @@
 
 Adds a cookie consent popup the complies with the cookie consent laws.
 
-Uses the ![Cookie Consent](https://cookieconsent.insites.com/download/) JavasScript library to show the popup.
+Uses the [Cookie Consent](https://cookieconsent.insites.com/download/) JavasScript library to show the popup.
 
 ## Installation
 
