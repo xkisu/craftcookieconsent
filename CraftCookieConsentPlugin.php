@@ -73,10 +73,10 @@ class CraftCookieConsentPlugin extends BasePlugin
                       "static": "'. $settings->position .'" == "toppush",
                       "theme": "'. $settings->layout .'",
                       "content": {
-                          "message": "'. $settings->message .'",
-                          "dismiss": "'. $settings->dismiss .'",
-                          "link": "'. $settings->learn .'",
-                          "href": "'. $settings->learn_more_link .'"
+                          "message": "'. Craft::t($settings->message) .'",
+                          "dismiss": "'. Craft::t($settings->dismiss) .'",
+                          "link": "'. Craft::t($settings->learn) .'",
+                          "href": "'. Craft::t($settings->learn_more_link) .'"
                       }
                     })});
                   </script>
