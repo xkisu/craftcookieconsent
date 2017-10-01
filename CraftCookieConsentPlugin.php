@@ -3,7 +3,7 @@ namespace Craft;
 
 /**
  * Class CraftCookieConsentPlugin
- *
+ * @author Kisu
  * @package Craft
  */
 class CraftCookieConsentPlugin extends BasePlugin
