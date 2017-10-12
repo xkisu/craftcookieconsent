@@ -48,11 +48,9 @@ class CraftCookieConsentPlugin extends BasePlugin
     }
 
     function init() {
-
-        //if ( !craft()->request->isCpRequest() ) { // we need it to run on the settings page for the plugin as well
-            craft()->templates->includeCssResource('craftcookieconsent/cookieconsent.min.css');
-            craft()->templates->includeJsResource('craftcookieconsent/cookieconsent.min.js', false);
             if ( !craft()->request->isCpRequest() && !craft()->request->isAjaxRequest) {
+                craft()->templates->includeCssResource('craftcookieconsent/cookieconsent.min.css');
+                craft()->templates->includeJsResource('craftcookieconsent/cookieconsent.min.js', false);
                 $settings = craft()->plugins->getPlugin('craftcookieconsent')->getSettings();
                 $script = '
                   <script>
